@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: hsl(0, 0%, 98%);
+  --elements-color: hsl(0, 0%, 100%);
+  --active-color: hsla(0, 0%, 78%, 0.348);
+  --text-color: hsl(209, 23%, 22%);
+  --shadow-color: #ddd;
+}
+body.dark {
+  --bg-color: hsl(207, 26%, 17%);
+  --elements-color: hsl(209, 23%, 22%);
+  --active-color: hsl(207, 30%, 13%);
+  --text-color: hsl(0, 0%, 100%);
+  --shadow-color: hsla(207, 10%, 36%, 0.71);
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--bg-color);
+}
+
+.active {
+  background-color: var(--bg-color);
+}
+
+.grid-system {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 60px;
+}

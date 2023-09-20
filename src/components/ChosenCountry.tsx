@@ -17,7 +17,6 @@ const ChosenCountry = () => {
     { alpha3Code: string; name: string; alpha2Code: string }[]
   >([]);
 
-  console.log(countryDetails);
   useEffect(() => {
     fetchCountry(countryName ? countryName : "").then((r) => {
       setCountryDetails(r[0] ? r[0] : null);

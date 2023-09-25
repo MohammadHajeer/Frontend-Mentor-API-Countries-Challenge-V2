@@ -14,7 +14,7 @@ const SearchInput = ({
       variants={searchCountryVariants}
       initial="hidden"
       animate="visible"
-      className="bg-[--elements-color] w-96 rounded-xl shadow-md flex items-center text-[--text-color] overflow-hidden"
+      className="bg-[--elements-color] w-96 max-w-full rounded-xl shadow-md flex items-center text-[--text-color] overflow-hidden"
     >
       <button
         aria-label="search icon"
